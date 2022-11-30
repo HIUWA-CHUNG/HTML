@@ -1,0 +1,133 @@
+body{
+
+    color: #5a4d3e;
+    background-color: bisque;
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px 40px 20px 40px;
+}
+
+.background
+{
+    background-image: url("./image/Backgroud1.jpg");
+    background-repeat:repeat-y;
+    background-position: center center;
+    background-size:contain;
+    width: auto;
+    height: auto;
+
+}
+
+header img {
+    width: 400px;
+    height: 80px;
+    margin-left: 430px;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.banner {
+    width:800px;
+    height:200px;
+    margin-left: 250px;
+    margin-right: 400px;
+    
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;          /*令圖片FIT比例 唔會變形*/
+    box-shadow: 3px 3px 3px rgb(67, 67, 67);       /*張相整立體線*/
+}
+
+.grid-container{
+    width: 30%;
+    height: 30%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, minmax(180px, 1fr));    /*repeat= 重複分割 1.auto-fit=會自已跟據網頁大小而退去下一行, 如果打4=割4欄 */
+    grid-auto-flow: dense;      /*auto-flow:將相自動排返痴埋一齊, dense:密集*/         /*2.闊度 minmax=最小,最大範圍*/
+    padding: 50px 0px 50px 230px;
+}
+
+.height{
+    grid-row: span 2;               /*張相食左2個位黎顯示*/
+}
+
+.width{
+    grid-column: span 2;
+}
+
+.big{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.shop-container{
+    background-image: url("./image/Backgroud2.jpg");
+    padding: 10px;
+    color: #5a4d3e;
+    display: grid;
+    grid-template-columns: auto auto auto;       /*打3個auto=3行欄位*/
+    grid-template-rows: auto auto auto;              /*調整列高度:高x闊*/
+    grid-gap: 40px 40px 40px;                         /*高x闊*/
+}
+
+.shop-container > div{       /*用>意思係指定要shop-container入面既div,而唔係要全部div*/
+    padding: 20px 60px;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    width: 70%;
+    height: 70%;
+    }
+
+.payment{
+    max-width: 20%; 
+    max-height: 10%;
+}
+nav,
+nav a {
+    height: 20pt;
+    font-size: 14pt;
+    color: #bbdde3;
+    background-color: rgb(64, 94, 69);
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+}
+
+.descript{
+    background-image: url("./image/Backgroud.jpg");
+}
+
+p{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.abc{
+    font-size: 8px;
+    padding-right: 300px;
+    color: rgb(133, 141, 149);
+}
+footer, footer a {
+    margin-top: 10px;
+    background-color: #37574a;
+    color: #bbdde3;
+    font-size: 12pt;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+address {
+    text-align: right;
+}
+
+
+.email{
+    padding: 0;
+}
